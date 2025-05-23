@@ -30,3 +30,4 @@ function typeLine() {
 }
 
 document.addEventListener("DOMContentLoaded", typeLine);
+

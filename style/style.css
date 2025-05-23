@@ -151,3 +151,74 @@ footer {
     border-color: black;
   }
 }
+
+.background-shapes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.1;
+  animation: float 10s ease-in-out infinite;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fdd5d5;
+  border-radius: 50%;
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.circle.small {
+  width: 40px;
+  height: 40px;
+  top: 70%;
+  left: 80%;
+  animation-delay: 2s;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  background-color: #00fff2;
+  top: 30%;
+  left: 70%;
+  animation-delay: 1s;
+}
+
+.square.big {
+  width: 100px;
+  height: 100px;
+  background-color: #ff4800;
+  top: 80%;
+  left: 10%;
+  animation-delay: 3s;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #51ff00;
+  top: 50%;
+  left: 35%;
+  animation-delay: 0.1s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
+}
+
+
